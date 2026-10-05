@@ -1,18 +1,14 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+void CalculateMultiply()
+{
 
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
-}
+Serial.print("Enter the first number: "); // Prompt for first number
+N1 = GetIntNumber(); // Get first number
+Serial.println(N1); // Display first number
+Serial.print("Enter the second number: "); // Prompt for second number
+N2 = GetIntNumber(); // Get second number
+Serial.print("Multiply = ");
+Serial.println(N1 * N2);
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
